@@ -7,21 +7,21 @@ function create_menu(basepath)
 		'<td class="td" valign="top">' +
 
 		'<ul>' +
-		'<li><a href="'+base+'index.html">User Guide Home</a></li>' +	
-		'<li><a href="'+base+'toc.html">Table of Contents Page</a></li>' +
+		'<li><a href="'+base+'index.html" title="User Guide Home">Kullanıcı Kılavuzu Ana Sayfası</a></li>' +	
+		'<li><a href="'+base+'toc.html" title="Table of Contents Page">İçindekiler</a></li>' +
 		'</ul>' +	
 
-		'<h3>Basic Info</h3>' +
+		'<h3 title="Basic Info">Temel Bilgiler</h3>' +
 		'<ul>' +
-			'<li><a href="'+base+'general/requirements.html">Server Requirements</a></li>' +
-			'<li><a href="'+base+'license.html">License Agreement</a></li>' +
+			'<li><a href="'+base+'general/requirements.html" title="Server Requirements">Sunucu Gereksinimleri</a></li>' +
+			'<li><a href="'+base+'license.html" title="License Agreement">Lisans Anlaşması</a></li>' +
 			'<li><a href="'+base+'changelog.html">Change Log</a></li>' +
 			'<li><a href="'+base+'general/credits.html">Credits</a></li>' +
 		'</ul>' +	
 		
-		'<h3>Installation</h3>' +
+		'<h3 title="Installation">Kurulum</h3>' +
 		'<ul>' +
-			'<li><a href="'+base+'installation/downloads.html">Downloading CodeIgniter</a></li>' +
+			'<li><a href="'+base+'installation/downloads.html" title="Downloading CodeIgniter">CodeIgniter\'ı İndir</a></li>' +
 			'<li><a href="'+base+'installation/index.html">Installation Instructions</a></li>' +
 			'<li><a href="'+base+'installation/upgrading.html">Upgrading from a Previous Version</a></li>' +
 			'<li><a href="'+base+'installation/troubleshooting.html">Troubleshooting</a></li>' +
