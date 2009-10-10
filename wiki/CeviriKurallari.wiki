@@ -1,0 +1,21 @@
+#summary Bu sayfa, çeviri yaparken dikkat edilecek kuralları açıklamaktadır.
+#labels Featured
+
+= Giriş =
+
+Yapılan çevirilerin belli bir standarda uygun olması gerekmektedir. Böylece ilerleyen süreçlerde daha düzenli bir çeviri sonucuna ulaşmış olabiliriz.
+
+= Neden Orjinal? =
+
+Orjinallik işin özüdür. Bu çeviri projesinin de özünde ingilizce vardır. Her ne kadar kendi dilimize çevirmek istesekte, çevirdiğimiz bir metnin farklı kişilere göre farklı algılanabilmesi muhtemeldir. Bu nedenle bir çevirinin aslını hemen görebilmesi sorunu çözecektir.
+
+Konu ile ilgili bir örnek vermek gerekirsek. Örneğin *Vertabanı Sınıfı* isminde bir başlık çevrilmiş. Bunun orjinalinin ne olduğunu anlamak için html taglarının title özellikleri kullanılabilir. 
+
+Örnek:
+----
+{{{
+<h2 title="Database Class">Veritabanı Sınıfı</h2>
+}}}
+----
+
+Bu durumda fare ile çeviri üzerinde bir müddet durulduğunda orjinal çeviri görüntülenebilecektir.
