@@ -27,7 +27,7 @@
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 1.7.2</h1></td>
+<td><h1>CodeIgniter User Guide Version 2.0.0</h1></td>
 <td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -116,7 +116,7 @@ instead of using the db->where() function:</p>
 <code>$query = $this->db->get_where('mytable', array('id' => $id), $limit, $offset);</code>
 
 <p>Please read the about the where function below for more information.</p>
-<p class="important">Note: get_where() was formerly known as getwhere(), which has been deprecated</p>
+<p class="important">Note: get_where() was formerly known as getwhere(), which has been removed</p>
 
 <h2>$this->db->select();</h2>
 <p>Permits you to write the SELECT portion of your query:</p>
@@ -198,7 +198,7 @@ $query = $this->db->get();<br />
 
 <p>Multiple function calls can be made if you need several joins in one query.</p>
 
-<p>If you need something other than a natural JOIN you can specify it via the third parameter of the function.
+<p>If you need a specific type of JOIN you can specify it via the third parameter of the function.
 Options are: left, right, outer, inner, left outer, and right outer.</p>
 
 <code>
@@ -228,7 +228,7 @@ $this->db->join('comments', 'comments.id = blogs.id', <strong>'left'</strong>);<
 	<code>$this->db->where('name', $name);<br />
 	$this->db->where('title', $title);<br />
 	$this->db->where('status', $status);
-	<br /><br />// WHERE name 'Joe' AND title = 'boss' AND status = 'active'	</code>	</li>
+	<br /><br />// WHERE name = 'Joe' AND title = 'boss' AND status = 'active'	</code>	</li>
 	
 	<li><strong>Custom key/value method:</strong>
 	
@@ -274,7 +274,7 @@ $this->db->or_where('id >', $id);
 <br />
 <br />// Produces: WHERE name != 'Joe' OR id > 50</code>
 
-<p class="important">Note: or_where() was formerly known as orwhere(), which has been deprecated.</p>
+<p class="important">Note: or_where() was formerly known as orwhere(), which has been removed.</p>
 
 
 <h2>$this->db->where_in();</h2>
@@ -356,7 +356,7 @@ $this->db->or_like('body', $match);
 
 
 	
-<p class="important">Note: or_like() was formerly known as orlike(), which has been deprecated.</p>
+<p class="important">Note: or_like() was formerly known as orlike(), which has been removed.</p>
 <h2>$this-&gt;db-&gt;not_like();</h2>
 <p>This function is identical to <strong>like()</strong>, except that it generates NOT LIKE statements:</p>
 <code> $this-&gt;db-&gt;not_like('title', 'match');<br />
@@ -381,7 +381,7 @@ $this-&gt;db-&gt;or_not_like('body', 'match'); <br />
 <br />
 <br />// Produces: GROUP BY title, date</code>
 	
-<p class="important">Note: group_by() was formerly known as groupby(), which has been deprecated. </p>
+<p class="important">Note: group_by() was formerly known as groupby(), which has been removed. </p>
 
 <h2> $this-&gt;db-&gt;distinct();<br />
 </h2>
@@ -391,7 +391,7 @@ $this-&gt;db-&gt;or_not_like('body', 'match'); <br />
 		<br />
 	// Produces: SELECT DISTINCT * FROM table</code></p>
 <h2>$this->db->having();</h2>
-<p>Permits you to write the HAVING portion of your query. There are 2 possible syntaxe, 1 argument or 2:</p>
+<p>Permits you to write the HAVING portion of your query. There are 2 possible syntaxes, 1 argument or 2:</p>
 	
 <code>$this->db->having('user_id = 45');
 <br />
@@ -439,7 +439,7 @@ The second parameter lets you set the direction of the result.  Options are <kbd
 	<br />
 	// Produces: ORDER BY title DESC, name ASC
 	</code></p>
-<p class="important">Note: order_by() was formerly known as orderby(), which has been deprecated.</p>
+<p class="important">Note: order_by() was formerly known as orderby(), which has been removed.</p>
 <p class="important">Note: random ordering is not currently supported in Oracle or MSSQL drivers. These will default to 'ASC'.</p>
 <h2>$this->db->limit();</h2>
 <p>Lets you limit the number of rows you would like returned by the query:</p>
@@ -750,7 +750,7 @@ Previous Topic:&nbsp;&nbsp;<a href="helpers.html">Query Helper Functions</a>
 <a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
 Next Topic:&nbsp;&nbsp;<a href="transactions.html">Transactions</a>
 </p>
-<p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006-2009 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">Ellislab, Inc.</a></p>
+<p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006-2010 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">EllisLab, Inc.</a></p>
 </div>
 
 </body>
